@@ -14,7 +14,7 @@ const internals = {
   createLocalAudioTrack: require('./createlocaltrack').audio,
   createLocalVideoTrack: require('./createlocaltrack').video,
   isSupported: require('./util/support')(),
-  version: require('../package.json').version,
+  version: require('../../package.json').version,
   Logger: require('./vendor/loglevel'),
   LocalAudioTrack: require('./media/track/es5').LocalAudioTrack,
   LocalDataTrack: require('./media/track/es5').LocalDataTrack,
@@ -68,7 +68,7 @@ const LocalAudioTrack = internals.LocalAudioTrack;
 const LocalVideoTrack = internals.LocalVideoTrack;
 const LocalDataTrack = internals.LocalDataTrack;
 
-module.exports = {
+export default {
   connect,
   createLocalAudioTrack,
   createLocalVideoTrack,

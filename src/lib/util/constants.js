@@ -1,6 +1,6 @@
 'use strict';
 /* eslint-disable camelcase */
-const packageInfo = require('../../package.json');
+const packageInfo = require('../../../package.json');
 module.exports.SDK_NAME = `${packageInfo.name}.js`;
 module.exports.SDK_VERSION = packageInfo.version;
 module.exports.SDP_FORMAT = 'unified';
